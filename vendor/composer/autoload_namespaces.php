@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
+    'Jenssegers\\Mongodb' => array($vendorDir . '/jenssegers/mongodb/src'),
 );

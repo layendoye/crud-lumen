@@ -1,0 +1,3 @@
+composer require jenssegers/mongodb --ignore-platform-reqs
+sudo apt install php-mongodb #j ai ajouter extension=mongo.so dans le php.ini
+composer require mongodb/mongodb

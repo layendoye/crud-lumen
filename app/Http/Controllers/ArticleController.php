@@ -37,8 +37,8 @@ class ArticleController extends Controller
         $article->update($request->all());
         return response()->json($article,200);
     }
-    public function delete($id){
-        Article::findOrFail($id)->delete();
+    public function delete($_id){
+        Article::findOrFail($_id)->delete();
         return response('Deleted successfully');
     }
 }
