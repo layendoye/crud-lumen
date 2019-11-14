@@ -4,10 +4,10 @@ namespace App;
 
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class Article extends Eloquent {
-    protected $collection = 'articles';
+class Comment extends Eloquent {
+    protected $collection = 'commentaire';
     protected $connection='mongodb';
         protected $fillable = [
-        'title', 'description','status',"id_comment"
+        'content'
     ];
 }

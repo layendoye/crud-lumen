@@ -21,7 +21,14 @@ $router->group(["prefix"=>"api"],
         $router->post('articles','ArticleController@create');
         $router->patch('articles/{id}','ArticleController@update');
         $router->delete('articles/{id}','ArticleController@delete');
-         $router->post('register', 'AuthController@register');
-         $router->post('login', 'AuthController@login');
+
+        $router->get('comment','CommentController@showAllComments');
+        $router->get('comment/{id}','CommentController@showOnComment');
+        $router->post('comment','CommentController@create');
+        $router->patch('comment/{id}','CommentController@update');
+        $router->delete('comment/{id}','CommentController@delete');
+
+        $router->post('register', 'AuthController@register');
+        $router->post('login', 'AuthController@login');
     }
 );
