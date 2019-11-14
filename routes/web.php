@@ -21,5 +21,7 @@ $router->group(["prefix"=>"api"],
         $router->post('articles','ArticleController@create');
         $router->patch('articles/{id}','ArticleController@update');
         $router->delete('articles/{id}','ArticleController@delete');
+         $router->post('register', 'AuthController@register');
+         $router->post('login', 'AuthController@login');
     }
 );
