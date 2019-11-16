@@ -8,6 +8,6 @@ class Article extends Eloquent {
     protected $collection = 'articles';
     protected $connection='mongodb';
         protected $fillable = [
-        'title', 'description','status',"id_comment"
+        'title', 'description','status'
     ];
 }

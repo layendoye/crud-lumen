@@ -26,7 +26,9 @@ class CommentController extends Controller
     }
     public function create(Request $request){
         $this->validate($request,[
-            'content'=>'required'
+            'content'=>'required',
+            "id_article"=>'required',
+            "auteur"=>'required'
         ]);
         $comment=Comment::create($request->all());
         return response()->json($comment,201);
